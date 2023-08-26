@@ -13,34 +13,42 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: '',
-      loadSidebar: true,
-      subMaxLevel: 2 ,//对应二级标题
-      loadNavbar: true,
-      //search: 'auto'
-      // 配置参数
-      search: {
+      repo: 'https://github.com/chris-li828/chris-li828.github.io.git', //github仓库
+      loadSidebar: true,  //显示侧边栏
+      loadNavbar: true,   //显示导航栏
+      subMaxLevel: 2 ,    //显示目录，对应二级标题
+      coverpage:true,     //开启封面渲染，默认封面和首页是连在一起的，封面独立设置onlycover
+      onlyCover: true,    //false只在访问主页时加载封面,跳转使用[Get Started](#Headline);true封面与首页分开,跳转使用[Get Started](README)
+      auto2top: true,     //切换页面后自动跳转到页面顶部
+      search: {           //search配置参数
         maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-        paths:  'auto',//or []
+        paths:  [],       //or 'auto'
         placeholder: 'search',
         noData: 'No Results!',
-        // 搜索标题的最大层级, 1 - 6
-        depth: 2,
+        depth: 2,         // 搜索标题的最大层级, 1 - 6
         hideOtherSidebarContent: true // 是否隐藏其他侧边栏内容
       }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!--  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>-->
-  <!--搜索-->
+
+  <!--  docsify.min.js 可不必引入，因为已经通过上面那条引入了更新的 docsify-->
+<!--  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>-->
+
+  <!--  &lt;!&ndash;全文搜索&ndash;&gt;显示搜索条-->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <!--  代码高亮-->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+
+<!--  图片缩放,不知道为啥加了后docs页面打不开-->
+<!--  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>-->
+
+  <!--  &lt;!&ndash;  代码高亮&ndash;&gt;要使用语法高亮，需要在代码块第一行添加对应的语言声明-->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
-  <!-- 侧边栏折叠 -->
+
+<!--  &lt;!&ndash; 侧边栏折叠 &ndash;&gt;-->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
-  <script src="autoSidebar.js"></script>
+<!--  <script src="js/autoSidebar.js"></script>-->
 </body>
 </html>

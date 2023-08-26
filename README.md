@@ -2,6 +2,6 @@
 
 > An awesome project.
 
-hello docsify111
+hello docsify
 
-[>>操作指南](guide.md)
+[>>操作指南](guide)
