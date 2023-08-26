@@ -4,4 +4,4 @@
 
 hello docsify
 
-[>>操作指南](guide)
+[>>操作指南](guide.md)
