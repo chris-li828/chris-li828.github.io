@@ -1,4 +1,7 @@
 # 操作指南
+## docs展示效果
+
+[试编译](https://chris-li828.github.io/#/)
 
 ## docsify项目初始化
 
