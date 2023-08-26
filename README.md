@@ -4,4 +4,4 @@
 
 hello docsify
 
-[>>操作指南](guide.md ':include')
+[>>操作指南](guide)
